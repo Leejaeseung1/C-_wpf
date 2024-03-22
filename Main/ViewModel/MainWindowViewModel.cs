@@ -3,7 +3,7 @@ using Main.Model;
 
 namespace Main.ViewModel
 {
-    internal partial class MainWindowViewModel : ViewModelBase
+    internal partial class MainWindowViewModel : ObservableObject
     {
         [ObservableProperty]
         private IList<DataModel> _data;
