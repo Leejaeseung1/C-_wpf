@@ -1,4 +1,5 @@
-﻿using Main.ViewModel;
+﻿using Main.Util;
+using Main.ViewModel;
 using System.Windows;
 
 namespace Main.View //same file path, xaml <Window x:Class="Main.View.MainWindow" same
@@ -12,7 +13,7 @@ namespace Main.View //same file path, xaml <Window x:Class="Main.View.MainWindow
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
+            DataContext = AppDI.GetService<MainWindowViewModel>();
         }
     }
 }
